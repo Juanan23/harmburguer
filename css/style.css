@@ -76,10 +76,7 @@ header nav{
  }
 
 
- header nav .logo {
-     
-     width: 50%;
- }
+
 
 header nav .logo img{
     max-width: 6.250em;
@@ -91,17 +88,35 @@ header nav ul{
 
 header nav .hamburguesa{
     cursor: pointer;
-    width: 50%;
+    
     
 }
 
-
-header nav .hamburguesa{
+header nav .hamburguesa div{
     border-top: 2px solid #aaa;
     margin-bottom: var(--padding);
     width: 1.875em;
-    
 }
+
+   header nav .menu li a{
+       display: block;
+       width: 100%;
+       text-decoration: none;
+       text-align: center;
+       padding: calc(var(--padding)*2);
+       color: #aaa;
+       border-bottom: 1px solid #aaa;
+   } 
+
+   header nav .menu li:last-child a{
+       border-bottom: none;
+   }
+
+
+   header nav .menu li a.activo, header nav .menu li a:hover{
+       color: var(--color-pricipal);
+       transition: 0.5s;
+   }
 /* final del header */
 
 
@@ -120,11 +135,42 @@ header nav .hamburguesa{
         display: inline;
         color: #ffffff;
         font-size: 120%;
-        text-decoration: ;
+        text-decoration: none;
     }
 }
 
 @media(min-width:1004px){
+
+    header nav .hamburguesa{
+        display: none;
+
+    }
+
+    header nav ul{
+        width: auto;
+        
+    }
+
+    header nav .menu li{
+        display: inline-block;
+    }
+
+    header nav .menu li a{
+        padding: 0.5em var(--padding);
+        border-bottom: 0px;
+
+    }
+
+    header{
+        box-shadow: 0px 1px 20px lightgray;
+        border-bottom-left-radius: 15px ;
+        border-bottom-right-radius: 15px ;
+    
+       
+            }
+
+
+
 
 }
 
