@@ -120,6 +120,37 @@ header nav .hamburguesa div{
 /* final del header */
 
 
+/* inicio footer */
+
+footer{
+    background-color: var(--color-seucndario);
+    padding: calc(var(--padding) *2) 0px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--fuente-principal);
+}
+
+.flecha a{
+    display: block;
+    color: var(--color-pricipal);
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 300%;
+}
+/* final footer */
+
 
 
 /* mediaqueries */
@@ -137,6 +168,8 @@ header nav .hamburguesa div{
         font-size: 120%;
         text-decoration: none;
     }
+
+    
 }
 
 @media(min-width:1004px){
@@ -168,6 +201,12 @@ header nav .hamburguesa div{
     
        
             }
+
+            footer{
+                text-align: left;
+            }
+
+           
 
 
 
