@@ -36,7 +36,7 @@ body{
 
 .container{
     max-width: var(--anchomaximo);
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 
@@ -117,6 +117,7 @@ header nav .hamburguesa div{
        color: var(--color-pricipal);
        transition: 0.5s;
    }
+
 /* final del header */
 
 
@@ -151,6 +152,83 @@ footer a:hover{
 }
 /* final footer */
 
+/* inicio hero */
+
+.hero{
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    background-color: #777;
+    background-blend-mode: multiply;
+   
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    
+
+}
+
+
+h1{
+    font-family: var(--fuente-secundaria);
+    font-size: 2.25em;
+}
+
+h2{
+    color: var(--color-pricipal);
+    font-family: var(--fuente-secundaria);
+    font-size: 2.25em;
+    margin: var(--margingrid) 0px;
+}
+
+
+.hero p{
+
+    font-size: 1.15em;
+}
+
+
+.hero .social li{
+    display: inline-block;
+    margin-right: var(--margingrid);
+    font-size: 2em;
+    
+}
+
+.hero .social li a{
+    color: white;
+}
+
+.boton{
+    background-color: var(--color-pricipal);
+    color: white;
+    display: inline-block;
+    padding: 1.15em;
+    margin: var(--margingrid);
+    text-decoration: none;
+    border: 1px solid var(--color-pricipal)
+}
+
+.boton:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-pricipal);
+    color: var(--color-pricipal)
+
+}
+
+.boton:hover i{
+    transform: translateX(5px);
+    transition: 0.5s;
+}
+/* final hero */
 
 
 /* mediaqueries */
@@ -204,7 +282,7 @@ footer a:hover{
 
             footer{
                 text-align: left;
-                
+
             }
 
            
