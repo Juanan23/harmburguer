@@ -29,6 +29,11 @@ img{
     display: block;
 }
 
+main p{
+    color: #666;
+    line-height: 1.25em;
+}
+
 body{
     font-family: var(--fuente-principal);
     font-size: var(--fontsize);
@@ -231,9 +236,111 @@ h2{
 /* final hero */
 
 
+/* Inicio Our Services */
+
+main section{
+    padding: 2.125em 1.5em;
+}
+
+main section h2{
+    color: black;
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color: var(--color-pricipal);
+}
+
+
+main section .underline{
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--color-pricipal);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: calc(var(--margingrid)*1.5);
+}
+
+main section .underline hr{
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--color-pricipal);
+}
+
+
+main #ourservices .grid article{
+    
+    display: grid;
+    gap: var(--margingrid);
+    border-bottom: 0px;
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em;
+ 
+
+}
+
+
+main section h3{
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+    margin: var(--padding);
+   font-weight: 700;
+
+}
+
+
+
+.enlace{
+    text-decoration: none;
+    padding-top: var(--padding);
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-pricipal);
+}
+
+.enlace i{
+    
+    transition: 0.5s;
+}
+
+.enlace:hover i{
+    transform: translateX(5px);
+    transition: 0.5s;
+}
+
+main #ourservices article>div .fas{
+    color: var(--color-pricipal);
+    font-size: 1.5em;
+    border: 1px solid var(--color-pricipal);
+    padding: 0.5em;
+}
+
+.fa-truck{
+    transform: rotateY(180deg);
+}
+/* Final Our Services */
+
 /* mediaqueries */
 
 @media (min-width:600px) {
+
+    main #ourservices .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    main #ourservices .grid article:last-child{
+        grid-column:1/3 ;
+    }
+
+    main #ourservices .grid article{
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+    }
 
     
 }
@@ -245,6 +352,12 @@ h2{
         color: #ffffff;
         font-size: 120%;
         text-decoration: none;
+    }
+    main #ourservices .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    main #ourservices .grid article:last-child{
+        grid-column:3/4 ;
     }
 
     
